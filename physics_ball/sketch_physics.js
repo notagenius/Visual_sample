@@ -11,7 +11,7 @@ var off;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  soundFile = loadSound('../files/LA-1-Jazz');
+  soundFile = loadSound('files/LA-1-Jazz');
 }
 
 function setup() {
@@ -73,7 +73,7 @@ function draw() {
     vol = analyzer.getLevel();
     //vol = mic.getLevel();
     var new_vol = vol;
-    if(new_vol-old_vol>0.03){
+    if(new_vol-old_vol>0.02){
         addNewParticle(); 
         addNewParticle();        
     }
@@ -85,7 +85,7 @@ function addNewParticle() {
     x = x + 10;
     fill(x%360,55,100);
     mass.push(random(0.06, 0.008));
-    if (mass.length > 25){
+    if (mass.length > 25 * 3){
         mass.splice(0,1);
         positionX.splice(0,1);
         positionY.splice(0,1);
