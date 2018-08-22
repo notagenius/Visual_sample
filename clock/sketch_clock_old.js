@@ -15,7 +15,7 @@ var soundFile;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  soundFile = loadSound('../files/beat');
+  soundFile = loadSound('files/ggp-1');
 }
 
 

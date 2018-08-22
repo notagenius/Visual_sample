@@ -24,7 +24,7 @@ var hiFreq = 188;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  soundFile = loadSound('../files/ggp-1');
+  soundFile = loadSound('files/ggp-1');
 }
 
 function setup(){
@@ -132,8 +132,8 @@ function draw(){
                 is_diff = 1; //default: 1
         }
 
-        //color_off = (color_off + 1) % colors.length;
-        //bg = colorAlpha(colors[color_off][0],1);
+        color_off = (color_off + 1) % colors.length;
+        bg = colorAlpha(colors[color_off][0],1);
         //clocks_radi = freqValue/600 * Math.min(window.innerWidth, window.innerHeight)/distance * 3;
         //clocks_radi = 	new_vol * Math.min(window.innerWidth, window.innerHeight)/distance * 3;
         clocks_radi = 	new_vol * Math.min(window.innerWidth, window.innerHeight)/distance * 2;
