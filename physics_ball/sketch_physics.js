@@ -53,7 +53,7 @@ var off;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  soundFile = loadSound('files/LA-1-Jazz');
+  soundFile = loadSound('files/Mallrat');
 }
 
 function setup() {
@@ -143,7 +143,7 @@ function draw() {
     vol = analyzer.getLevel();
     //vol = mic.getLevel();
     var new_vol = vol;
-    if(new_vol-old_vol>0.02){
+    if(new_vol-old_vol>0.1){
         addNewParticle(); 
         addNewParticle();        
     }
