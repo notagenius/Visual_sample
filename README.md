@@ -3,3 +3,6 @@
 the third parameter of color has a bug. even there is nothing tells it.
 so it leads to when set up alpha channel,
 it doesn't work for the one before it is a NaN
+
+
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) 
